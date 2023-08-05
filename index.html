@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>RPS.GAME</title>
+   </head>
+
+   <body>
+      <main>
+         <h1 class="heading box">ROCK PAPER SCISSORS GAME</h1>
+
+         <section class="player">
+            <h5 id="playerName" class="header">YOU</h5>
+            <button id="rock">ROCK</button>
+            <button id="paper">PAPER</button>
+            <button id="scissors">SCISSORS</button>
+            <p>Scores:<span id="playerScores" class="scores">0</span></p>
+         </section>
+
+         <section class="computer">
+            <h5 class="header">OPPONENT</h5>
+            <button id="rock2">ROCK</button>
+            <button id="paper2">PAPER</button>
+            <button id="scissors2">SCISSORS</button>
+            <p>Scores:<span id="computerScores" class="scores">0</span></p>
+         </section>
+
+         <section class="box">
+            <button id="start" class="green btn">START</button>
+            <div id="result" class="result">Are you feeling lucky? Let's play😍</div>
+            <button id="retry" class="red btn">RETRY</button>
+         </section>
+      </main>
+
+      <div id="overlay" class="hidden overlay">
+         <form action="">
+            <input type="text" name="playerName" class="playerName" maxlength="10" />
+            <button type="button" id="submit" class="go btn">Go</button>
+         </form>
+      </div>
+
+      <script src="script.js"></script>
+   </body>
+</html>
